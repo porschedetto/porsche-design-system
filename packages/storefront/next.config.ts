@@ -19,6 +19,9 @@ const nextConfig: NextConfig = {
   compiler: {
     styledComponents: true,
   },
+  experimental: {
+    inlineCss: true,
+  },
 };
 
 const withMDX = createMDX({
