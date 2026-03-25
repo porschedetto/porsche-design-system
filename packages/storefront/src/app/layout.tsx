@@ -12,7 +12,6 @@ import { prefetchDNS, preload } from 'react-dom';
 import { Canvas } from '@/components/layout/Canvas';
 import { Providers } from '@/components/providers/Providers';
 import { StorefrontColorSchemeProvider } from '@/components/providers/StorefrontColorSchemeProvider';
-import { getBasePath } from '@/utils/getBasePath';
 import { isDevEnvironment } from '@/utils/isDev';
 
 const title = 'Porsche Design System';
@@ -67,8 +66,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const basePath = getBasePath();
-
   const getHref = (href: string) => {
     return isDevEnvironment
       ? href.replace('https://cdn.ui.porsche.com/porsche-design-system', 'http://localhost:3001')
@@ -96,7 +93,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scheme-light-dark">
       <head>
-        <base href={basePath ? `/${basePath}/` : '/'} />
         {getCSPMetaTag()}
         <meta property="og:image" content="/assets/og-image.png" />
         <meta property="og:image:alt" content="Porsche Wordmark" />
