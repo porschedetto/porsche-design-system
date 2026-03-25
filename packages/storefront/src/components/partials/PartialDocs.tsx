@@ -1,6 +1,6 @@
 import * as partials from '@porsche-design-system/components-react/partials';
 import type React from 'react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { SyntaxHighlighter } from '@/lib/syntaxHighlighter';
 import { CodeBlock } from '@/components/playground/CodeBlock';
 import type { PartialCall, PartialLocation, Partials } from '@/models/partials';
 import { getAngularPartialExample } from '@/utils/partials/getAngularPartialExample';

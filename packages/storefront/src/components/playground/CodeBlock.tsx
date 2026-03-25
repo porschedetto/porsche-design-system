@@ -3,7 +3,7 @@
 import { PTabsBar, type TabsBarUpdateEventDetail } from '@porsche-design-system/components-react/ssr';
 import type { Framework, FrameworkMarkup } from '@porsche-design-system/shared';
 import React, { type PropsWithChildren } from 'react';
-import SyntaxHighlighter, { type SyntaxHighlighterProps } from 'react-syntax-highlighter';
+import { SyntaxHighlighter, type SyntaxHighlighterProps } from '@/lib/syntaxHighlighter';
 import { useStorefrontFramework } from '@/hooks/useStorefrontFramework';
 import { frameworkNameMap } from '@/models/framework';
 

@@ -2,7 +2,7 @@ import path from 'node:path';
 import fs from 'fs';
 import * as prettier from 'prettier';
 import type React from 'react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { SyntaxHighlighter } from '@/lib/syntaxHighlighter';
 
 type StylesheetViewerProps = {
   file: 'color-scheme.css' | 'font-face.css' | 'legacy-radius.css' | 'normalize.css' | 'variables.css';

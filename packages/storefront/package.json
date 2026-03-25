@@ -77,6 +77,12 @@
     "postcss": "*",
     "@tailwindcss/postcss": "*"
   },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version",
+    "last 1 edge version"
+  ],
   "scope": "@porsche-design-system",
   "volta": {
     "extends": "../../package.json"

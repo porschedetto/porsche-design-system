@@ -19,7 +19,7 @@ import Link from 'next/link';
 import type React from 'react';
 import type { PropsWithChildren } from 'react';
 
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { SyntaxHighlighter } from '@/lib/syntaxHighlighter';
 import { getChangelogAnchorId } from '@/utils/extractChangelogVersion';
 
 export const H3 = ({ children }: PropsWithChildren) => (
